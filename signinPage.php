@@ -4,14 +4,14 @@
   <title>signinPage</title>
 </head>
 <body>
-   <form action="action_page.php">
+   <form action="signinPage.php" method="POST">
   <div class="imgcontainer">
     <img src="img_avatar2.png" alt="image_here" >
   </div>
 
   <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required><br>
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required><br>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required><br>

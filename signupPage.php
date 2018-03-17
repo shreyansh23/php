@@ -47,7 +47,7 @@
 <?php
 // define variables and set to empty values
 $name = $username= $number= $age=$gender=$email=$password="";
-
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = test_input($_POST["name"]);
         $username = test_input($_POST["username"]);
@@ -68,11 +68,11 @@ function test_input($data) {
 
 $servername = "192.168.121.187";
 $username = "first_year";
-$password = "first_year";
+$psw = "first_year";
 $dbname = "first_year_db";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $psw, $dbname);
 // Check connection
 if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
