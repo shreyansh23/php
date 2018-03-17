@@ -4,7 +4,7 @@ function checkForm(form) {
 		var reName =/^[\w ]+$/;
 		var reAge =/^[1-9]{1}[0-9]?$/;
 		var reEmail =/[a-zA-Z]{1}[\w]*(@){1}[a-zA-Z]+(.)[a-zA-Z]+$/;
-		if(!rePhone.test(form.phoneNumber.value))
+		if(!rePhone.test(form.number.value))
 		{
 			errors.push("Invalid Phone Number!");
 		}
@@ -50,10 +50,7 @@ function checkForm(form) {
 			
 		}
         
-        if(!reName.test(form.city.value))
-        	{
-        		errors.push("Invalid City Name!");
-        	}
+       
 
 
 
