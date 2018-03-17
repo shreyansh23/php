@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome to Social Network</title>
+
+<title>Welcome to Social Network</title>
 </head>
-<body>
-<button><a href="signinPage.php">Signin</a></button>
-<button><a href="SignupPage.php">Signup</a></button>
+<a href="signinPage.php"><button>Signin</button></a>
+<a href="signupPage.php"><button>Signup</button></a>
 </body>
 </html>
